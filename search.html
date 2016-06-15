@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="App">
+	<head>
+		<title>Search Results</title>
+	</head>
+	<body ng-controller="SearchCtrl">
+		<a href="home.html">Home</a>
+		<ul>
+			<li ng-repeat="p in properties">
+				{{ p._source.address }}, ${{ p._source.price }}
+			</li>
+		</ul>	
+
+		
+		<script src="bower/angular/angular.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/controllers/search.js"></script>
+		<script src="js/services/services.js"></script>
+	</body>
+</html>
